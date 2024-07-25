@@ -8,26 +8,21 @@
   --shilo: #e4a99f;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "poppins", sans-serif;
-  color: #444;
-}
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 100vh; /* Ensure full viewport height */
   background-color: var(--mineshaft);
+  /* min-height: 4000px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .container {
-  background-color: white;
+  background-color: var(--blacksqueeze);
+  width: 576px;
   border-radius: 5px;
   padding: 30px;
+  padding-right: 40px;
   width: 450px;
 }
 .container p {

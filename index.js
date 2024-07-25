@@ -6,9 +6,12 @@ function generateMessages() {
 
   return names.map((name) => {
     let trimmedName = name.trim();
+
+    let boldTrimmedName = `*${trimmedName}*`;
+
     let personalizedLink = `${baseLink}?to=${encodeURIComponent(trimmedName)}`;
     let personalizedMessage = currentMessage
-      .replace(/\[nama\]/g, trimmedName || "[nama]")
+      .replace(/\[nama\]/g, boldTrimmedName || "[nama]")
       .replace(/\[link-undangan\]/g, personalizedLink || "[link-undangan]");
     return {
       name: trimmedName,
