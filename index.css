@@ -1,0 +1,146 @@
+:root {
+  /* --pink: #f14e95; */
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  --stardust: #9e9f9e;
+  --mineshaft: #383b42;
+  --blacksqueeze: #e4e3df;
+  --shilo: #e4a99f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  color: #444;
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh; /* Ensure full viewport height */
+  background-color: var(--mineshaft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  width: 450px;
+}
+.container p {
+  margin: 20px 0;
+}
+.container li {
+  list-style: disc;
+  margin: 5px;
+  margin-left: 12px;
+  font-size: 0.8rem;
+}
+form div {
+  gap: 5px;
+  margin-bottom: 20px;
+}
+span input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  background-color: #eee;
+  border: none;
+  outline: none;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #eee;
+  border: none;
+  outline: none;
+}
+button {
+  background-color: #e53653;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #a20d26;
+  cursor: pointer;
+}
+
+/* table */
+/* Scrollable Table Container */
+.table-container {
+  margin-top: 20px;
+  overflow-y: auto; /* Vertical scrollbar */
+}
+
+table {
+  /* width: 100vh; */
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 10%; /* Adjust the width as needed */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 60%; /* Adjust the width as needed */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 30%; /* Adjust the width as needed */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Style for the action buttons */
+button.action-button {
+  background-color: #23d366;
+  color: white;
+  width: 10rem;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 16px; /* Add some padding */
+  margin: 0 5px; /* Space between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Adjust font size */
+}
+
+button.action-button:hover {
+  background-color: #147b3b;
+  color: white;
+}
+
+button.copy-button {
+  margin-top: 2px;
+  background-color: #e53653;
+  color: white;
+}
+
+button.copy-button:hover {
+  background-color: #a20d26;
+  color: white;
+  cursor: pointer;
+}
