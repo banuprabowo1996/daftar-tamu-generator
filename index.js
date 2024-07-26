@@ -23,6 +23,7 @@ function generateMessages() {
 function generateTable() {
   let messages = generateMessages();
   let table = document.getElementById("messageTable");
+  let tableTitle = document.querySelector(".table-title");
   let tbody = table.querySelector("tbody");
 
   // Clear previous rows
@@ -43,7 +44,7 @@ function generateTable() {
 
     // Send Button
     let sendButton = document.createElement("button");
-    sendButton.textContent = "Send Via Whatsapp";
+    sendButton.textContent = "Kirim Via Whatsapp";
     sendButton.className = "action-button";
     sendButton.onclick = function () {
       sendToWhatsapp(entry.message);
@@ -65,6 +66,7 @@ function generateTable() {
 
   // Show the table
   table.style.display = "table";
+  tableTitle.style.display = "inline";
 }
 
 function copyToClipboard(text) {

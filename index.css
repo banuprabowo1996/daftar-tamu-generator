@@ -11,18 +11,16 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  /* min-height: 2000px; */
   background-color: var(--blacksqueeze);
-  /* color: white; */
   min-height: 100vh;
   max-width: 576px;
 }
 
-.head {
+.head div {
+  padding: 10px;
 }
-
-.form {
-  text-align: start;
+.head h2 {
+  font-weight: bold;
 }
 
 .form input,
@@ -33,14 +31,24 @@ textarea {
   margin: 5px;
   margin-left: -2px;
   font-size: 1rem;
+  border-radius: 5px;
   border: none;
   outline: none;
 }
 
-.form li {
+.form textarea {
+  margin-top: -5px;
+}
+
+.form li,
+.step-by-step li {
   list-style-type: circle;
   font-size: 0.8rem;
   margin-left: -20px;
+}
+
+.form .highlight {
+  background-color: rgb(240, 234, 105);
 }
 
 button {
@@ -60,13 +68,19 @@ button:hover {
 /* table */
 /* Scrollable Table Container */
 .table-container {
-  margin-top: 20px;
+  margin-top: 40px;
   overflow-y: auto; /* Vertical scrollbar */
 }
 
 table {
   /* width: 100vh; */
   border-collapse: collapse;
+}
+
+.table-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 table,
